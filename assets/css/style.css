@@ -1,0 +1,217 @@
+@font-face {
+    font-family: YoungSerifRegular;
+    src: url("../fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url("../fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-weight: 400 700;
+    font-stretch: 50% 200%;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+
+/*     COLORES */
+
+    --stone-900-color: #312e2c;
+    --stone-600-color: #5f564d;
+    --stone-150-color: #e3ddd7;
+    --stone-100-color: #f3e5d7;
+    --brown-800-color: #854632;
+    --rose-800-color: #7a284e;
+    --rose-50-color: #fff7fb;
+    --white-color:#ffffff;
+
+/*      TYPHOGRAPHY */
+
+    --text-1: YoungSerifRegular;
+    --text-2: OufitSemiBold;
+    --text-3: OutfitRegular;
+    --text-4: OufitBold;
+}
+
+.layout__text-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem; 
+    padding: 4rem 3.2rem;
+}
+
+.img__omelette {
+    max-width: 37.5rem;
+    object-fit: cover;
+}
+
+.header__title {
+    font-size: clamp(3.6rem, 3.459rem + 0.376vw, 4rem);
+    font-family: YoungSerifRegular;
+    line-height: 100%;
+    margin-bottom: 2.4rem;
+}
+
+.header__subtitle {
+    width: 100%;
+}
+
+.subtitle__parrafo {
+    font-size: 1.6rem;
+    font-family: Outfit;
+    font-weight: 400;
+    color: var(--stone-600-color);
+    line-height: 1.5;
+}
+
+.layout__preparation {
+    background-color: var(--rose-50-color);
+    padding: 2.4rem;
+    border-radius: 1.2rem;
+}
+
+.preparation__title {
+    font-size: 2rem;
+    font-family: Outfit;
+    font-weight: 600;
+    color: var(--rose-800-color);
+    line-height: 1;
+    margin-bottom: 1.6rem;
+}
+
+.intructions__list,
+.preparation__list {
+    padding: 0 2.4rem; 
+}
+
+.list__item {
+    font-size: 1.6rem;
+    font-family: Outfit;
+    font-weight: 400;
+    color: var(--stone-600-color);
+    line-height: 150%;
+    margin-bottom: .8rem;
+    padding-left: 1.6rem; 
+}
+
+.list__item::marker {
+    color: var(--rose-800-color);
+}
+
+
+.list__item:last-child {
+    margin-bottom: 0;
+}
+
+.item__bold {
+    font-weight: 600;
+}
+
+.ingredients__list {
+    padding: 0  2.4rem;
+}
+
+.nutrition__title,
+.ingredients__title,
+.intructions__title {
+    font-size: 2.8rem;
+    font-family: YoungSerifRegular;
+    color: var(--rose-800-color);
+    line-height: 100%;
+    margin-bottom: 2.4rem;
+
+}
+
+.nutrition__subtitle {
+    font-size: 1.6rem;
+    font-family: Outfit;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--stone-600-color);
+    margin-bottom: 2.4rem;
+}
+
+.nutrition__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list__item--nutrition {
+    color: var(--rose-800-color);
+}
+
+.nutrition__list .list__item {
+    min-width: 11.5rem;
+}
+
+hr {
+    border-color: rgba(0, 0, 0, 0.114);
+    width: 100%;
+}
+
+@media (min-width: 391px) {
+    .layout {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--stone-100-color);
+        padding: 12.8rem 0;
+    }
+
+    .layout__recipe {
+        width: 100%;
+        height: 100%;
+        max-width: clamp(61.6rem, 58.058rem + 9.419vw, 73.6rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: var(--white-color);
+        border-radius: 2.4rem;
+        padding: 4rem; 
+    }
+
+    .recipe__img {
+        max-width: 53.6rem;
+        height: 100%;
+        margin: 0 auto;
+        padding-top: 4rem;
+    }
+
+    .img__omelette {
+        width: 100%;
+        max-inline-size: 100%;
+        block-size: 100%;
+        border-radius: 1.2rem;
+        object-fit: fill;
+    }
+}
+
+@media (min-width:768px) {
+    .layout__recipe {
+        padding: 3.6rem;
+    }
+
+
+    /* .layout__recipe { */
+    /*     max-width: 73.6rem; */
+    /* } */
+
+    .recipe__img {
+        max-width: 65.6rem;
+    }
+}
+
+@media (max-width:375px) {
+
+    .header__title {
+        font-size: clamp(2.7rem, 0.6rem + 7.5vw, 3.3rem);
+    }
+}
