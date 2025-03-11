@@ -71,7 +71,7 @@ html {
 
 .layout__preparation {
     background-color: var(--rose-50-color);
-    padding: 2.4rem;
+    padding: 2.7rem 2.4rem;
     border-radius: 1.2rem;
 }
 
@@ -80,7 +80,7 @@ html {
     font-family: Outfit;
     font-weight: 600;
     color: var(--rose-800-color);
-    line-height: 1;
+    line-height: 100%;
     margin-bottom: 1.6rem;
 }
 
