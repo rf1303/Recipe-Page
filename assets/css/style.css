@@ -181,8 +181,6 @@ hr {
     .recipe__img {
         max-width: 53.6rem;
         height: 100%;
-        margin: 0 auto;
-        padding-top: 4rem;
     }
 
     .img__omelette {
